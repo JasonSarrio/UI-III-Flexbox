@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,21 +45,286 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Righteous', cursive;
+	color:white
 }
-
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+	font-family:'Permanent Marker', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
+	color:white
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {background-color: rgb(0, 0, 0);}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */ 
+.container{
+	width: 950px;
+	margin: 0 auto;
+}
+hr{
+	width: 100%;
+	border: 1px solid black;
+}
+
+/* Navigation styling */
+.navigation header{
+	display: flex;
+	margin-bottom: 85px;
+	padding: 30px;
+	background-color:rgb(255, 255, 255);
+	justify-content: center;
+	align-items: center;
+}
+
+nav{
+	display: flex;
+	margin-right: 50px;
+}
+
+nav a{
+	text-decoration: none;
+	color: rgb(252, 252, 252);
+	font-size: 25px;
+	margin-left: 20px; 
+	margin-right: 20px;
+	transition: 0.10s;
+}
+nav a:hover{
+	color:rgb(148, 148, 148);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.445);
+	transition: 0.0s;
+}
+.main-article{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-article section{
+	text-align: center;
+}
+.main-article h1{
+	font-size: 6.0em;
+	word-spacing: 300px;
+	line-height: 75px;
+}
+.main-article button{
+	padding: 10px 35px;
+	background-color: rgb(255, 0, 0);
+	border: 1px solid rgb(172, 163, 163);
+}
+.main-article button:hover{
+	background-color: rgb(173, 173, 173);
+	color: black;
+	transition: 0.5s;
+}
+
+	/* Main Con */
+		
+	.first-section{ 
+		display:flex;
+		justify-content: center;
+		padding: 10px;
+	}
+
+.first-section h2{
+	font-size: 30px;
+}
+
+.content-article img{
+	padding: 10px;
+}
+
+.second-section{
+	display:flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.second-section h2{
+	font-size:30px;
+}
+
+
+footer h3{
+	margin: 55px 0 0 0;
+}
+footer p{
+	text-align: center;
+	margin-top: 25px;
+}
+
+
+
+
+
+
+
+/* Service CSS */
+
+.container {
+	width: 950px;
+	margin: auto;
+  }
+  
+  header nav {
+	  display: flex;
+	flex-wrap: wrap;
+  }
+  
+  header nav a {
+	text-decoration: none;
+	color: rgb(235, 2, 2);
+	font-size: 25px;
+	margin-left: 20px; 
+	margin-right: 20px;
+	transition: 0.10s;
+  }
+  
+  header nav a :hover{
+	color:rgb(148, 148, 148);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.445);
+	transition: 0.0s;
+}
+
+  img {
+	max-width: 100%;  
+  }
+  
+  p {
+	line-height: 18px;
+  }
+  
+  ul {
+	list-style-type: square;
+	list-style-position: inside;
+	line-height: 30px;
+	margin-top: 20px;
+  }
+  
+  .logo {
+	  margin: 20px;
+	padding-top:15px;
+  }
+  
+  .IMG {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-around;
+	margin: auto
+  }
+  .cta {
+	text-align: center; 
+	line-height: 60px;
+  }
+  
+  .cta h1 {
+	  font-size: 100px;
+  }
+  
+  .about-services {
+	margin: 30px 0 0 30px;
+  }
+  
+  .about-services h1 {
+	  font-size: 24px;  
+	  text-align: center
+  }
+  
+  button {
+	font-size: 16px;
+	padding: 5px 40px 5px 40px;
+	border: 1px solid rgb(0, 0, 0);
+  }
+  
+  .content {
+	  
+	  border-top: 1px solid black;
+	border-bottom: 1px solid black;  
+	margin: 30px; 
+  }
+  
+  .services-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;  
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;  
+	margin: 30px;
+	
+	padding-bottom: 40px;
+  }
+  
+  .service-item {
+	margin: 40px 0 0 0;
+	padding: 20px;
+	background: red(143, 56, 56);
+	border: 1px solid rgb(238, 5, 5);
+	width: 400px;
+  }
+  
+  .service-item p {
+	line-height: 18px;
+  }
+  .service-item button {
+	margin-top: 20px;
+	font-size: 12px;
+	padding: 7px 20px 7px 20px;
+	border: 1px solid rgb(219, 204, 204);  
+	border-radius: 5px;
+  }
+  
+  .two-col {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0 40px 0;
+  }
+  
+  .upper-items {
+   width: 400px;
+  }
+  
+  .three-col {
+	display: flex;
+	justify-content: space-between;  
+	margin: 40px 0 40px 0;
+  }
+  
+  .lower-items {
+	width: 250px;
+  }
+  
+  footer {
+	margin: 20px 30px 90px 30px;
+  }
+  
+  .copyright {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 50px;
+  }
+  
+  address {
+	margin-bottom: 30px;
+  }
+  
+  .service-facts {
+	  
+	  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;   
+	margin: 30px;
+  }
+  
+  .service-facts-item {
+	width: 400px;
+	text-align: center
+  }
+  body {background-color: rgb(0, 0, 0);}
+  
