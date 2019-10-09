@@ -75,10 +75,10 @@ hr{
 
 /* Navigation styling */
 .navigation header{
-	display: flex;
-	margin-bottom: 85px;
-	padding: 30px;
-	background-color:rgb(255, 255, 255);
+	display:flex;
+	margin-bottom: 50px;
+	padding: 2px;
+	background-color:rgb(7, 7, 7);
 	justify-content: center;
 	align-items: center;
 }
@@ -174,7 +174,6 @@ footer p{
   
   header nav {
 	  display: flex;
-	flex-wrap: wrap;
   }
   
   header nav a {
@@ -208,8 +207,10 @@ footer p{
   }
   
   .logo {
-	  margin: 20px;
+	margin: auto;
 	padding-top:15px;
+	text-align: center
+
   }
   
   .IMG {
